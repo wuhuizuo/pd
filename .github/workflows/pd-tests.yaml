@@ -3,19 +3,11 @@ on:
   push:
     branches:
       - master
-      - release-4.0
-      - release-5.*
-      - release-6.*
-      - release-7.*
-      - release-8.*
+      - release-*      
   pull_request:
     branches:
       - master
-      - release-4.0
-      - release-5.*
-      - release-6.*
-      - release-7.*
-      - release-8.*
+      - release-*
 concurrency:
   group: ${{ github.ref }}-${{ github.workflow }}
   cancel-in-progress: true
